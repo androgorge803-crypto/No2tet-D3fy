@@ -775,10 +775,27 @@
 
   <div class="toast" id="toast"></div>
 
-  <!-- 🎵 الأغنية — غيّر اسم الملف هنا -->
-  <audio id="bgMusic" loop>
-    <source autolay src="AlbumatyCom-kayrwky-nfsy-ahbk-ma.mp3" type="audio/mpeg">
-  </audio>
+  <!-- 🎵 الأغنية -->
+<audio id="bgMusic" loop autoplay>
+  <source src="AlbumatyCom-kayrwky-nfsy-ahbk-ma.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // تشغيل الصوت تلقائياً بعد أي ضغطة من المستخدم
+  const music = document.getElementById('bgMusic');
+
+  function startMusic() {
+    music.volume = 0.4;
+    music.play().catch(() => {});
+    document.removeEventListener('click', startMusic);
+    document.removeEventListener('touchstart', startMusic);
+    document.removeEventListener('keydown', startMusic);
+  }
+
+  document.addEventListener('click', startMusic);
+  document.addEventListener('touchstart', startMusic);
+  document.addEventListener('keydown', startMusic);
+</script>
 
   <script>
     // ============================================================
