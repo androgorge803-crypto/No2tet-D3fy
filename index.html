@@ -330,6 +330,7 @@
       box-shadow: 0 8px 30px rgba(255,100,180,0.15);
     }
     .memory-photo { width: 100%; height: 130px; object-fit: cover; display: block; cursor: pointer; }
+    video.memory-photo { object-fit: contain; background: #000; height: auto; max-height: 250px; }
     .memory-body { padding: 16px; }
     .memory-emoji { font-size: 28px; margin-bottom: 10px; }
     .memory-title {
@@ -443,7 +444,7 @@
       z-index: 500; align-items: center; justify-content: center; padding: 20px;
     }
     .lightbox.visible { display: flex; }
-    .lightbox img { max-width: 100%; max-height: 90vh; border-radius: 12px; }
+    .lightbox img, .lightbox video { max-width: 100%; max-height: 90vh; border-radius: 12px; }
     .lightbox-close {
       position: absolute; top: 20px; left: 20px;
       background: transparent; border: none; color: white;
@@ -549,7 +550,7 @@
       <div class="memories-grid">
                <!-- الكروت -->
         <div class="memory-card">
-          <img class="memory-photo" src="" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (3).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌙</div>
             <div class="memory-title">راشييي</div>
@@ -559,7 +560,7 @@
         </div>
 
         <div class="memory-card">
-          <img class="memory-photo" src="" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (1).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -569,7 +570,7 @@
         </div>
 
         <div class="memory-card">
-          <video class="memory-photo" controls><source src=""></video>
+          <video class="memory-photo" onclick="openLightbox(this.querySelector('source').src)"><source src="ff (1).mp4"></video>
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -579,7 +580,7 @@
         </div>
 
         <div class="memory-card">
-          <video class="memory-photo" controls><source src=""></video>
+          <video class="memory-photo" onclick="openLightbox(this.querySelector('source').src)"><source src="ff (2).mp4"></video>
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -589,7 +590,7 @@
         </div>
 
          <div class="memory-card">
-          <img class="memory-photo" src="" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (10).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌙</div>
             <div class="memory-title">يوم خروجنا</div>
@@ -599,7 +600,7 @@
         </div>
 
         <div class="memory-card">
-          <img class="memory-photo" src="" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (11).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -608,7 +609,7 @@
           </div>
         </div>
         <div class="memory-card">
-          <img class="memory-photo" src="" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (12).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌙</div>
             <div class="memory-title">يوم خروجنا</div>
@@ -618,7 +619,7 @@
         </div>
 
         <div class="memory-card">
-          <img class="memory-photo" src="" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (13).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -627,7 +628,7 @@
           </div>
         </div>
         <div class="memory-card">
-          <img class="memory-photo" src="bmw.png" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (2).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌙</div>
             <div class="memory-title">يوم خروجنا</div>
@@ -637,7 +638,7 @@
         </div>
 
         <div class="memory-card">
-          <img class="memory-photo" src="bmw.png" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (4).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -646,7 +647,7 @@
           </div>
         </div>
         <div class="memory-card">
-          <img class="memory-photo" src="bmw.png" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (5).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌙</div>
             <div class="memory-title">يوم خروجنا</div>
@@ -656,7 +657,7 @@
         </div>
 
         <div class="memory-card">
-          <img class="memory-photo" src="bmw.png" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (6).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -665,7 +666,7 @@
           </div>
         </div>
         <div class="memory-card">
-          <img class="memory-photo" src="bmw.png" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (7).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌙</div>
             <div class="memory-title">يوم خروجنا</div>
@@ -675,7 +676,7 @@
         </div>
 
         <div class="memory-card">
-          <img class="memory-photo" src="bmw.png" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (8).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -684,7 +685,7 @@
           </div>
         </div>
         <div class="memory-card">
-          <img class="memory-photo" src="bmw.png" onclick="openLightbox(this.src)" />
+          <img class="memory-photo" src="ff (9).jpg" onclick="openLightbox(this.src)" />
           <div class="memory-body">
             <div class="memory-emoji">🌹</div>
             <div class="memory-title">عنوان الذكرى</div>
@@ -706,111 +707,51 @@
       <!-- GALLERY -->
     <div class="page" id="page-gallery">
       <h2 class="page-title">📸 صورنا مع بعض</h2>
-      <!-- ============================================ -->
-      <!-- ✏️ الجاليري — غيّر اسم الصورة في src=""    -->
-      <!-- ============================================ -->
       <div class="gallery-grid">
- 
-        <!-- صورة 1 -->
-        <div class="gallery-item">
-          <img src="صورة (1).jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 2 -->
-        <div class="gallery-item">
-          <img src="صورة (2).jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 3 -->
-        <div class="gallery-item">
-          <img src="" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 4 -->
-        <div class="gallery-item">
-          <img src="photo4.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 5 -->
-        <div class="gallery-item">
-          <img src="photo5.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 6 -->
-        <div class="gallery-item">
-          <img src="photo6.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 7 -->
-        <div class="gallery-item">
-          <img src="photo7.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 8 -->
-        <div class="gallery-item">
-          <img src="photo8.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 9 -->
-        <div class="gallery-item">
-          <img src="photo9.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 10 -->
-        <div class="gallery-item">
-          <img src="photo10.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 11 -->
-        <div class="gallery-item">
-          <img src="photo11.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 12 -->
-        <div class="gallery-item">
-          <img src="photo12.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 13 -->
-        <div class="gallery-item">
-          <img src="photo13.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 14 -->
-        <div class="gallery-item">
-          <img src="photo14.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 15 -->
-        <div class="gallery-item">
-          <img src="photo15.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 16 -->
-        <div class="gallery-item">
-          <img src="photo16.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 17 -->
-        <div class="gallery-item">
-          <img src="photo17.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 18 -->
-        <div class="gallery-item">
-          <img src="photo18.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 19 -->
-        <div class="gallery-item">
-          <img src="photo19.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
-        <!-- صورة 20 -->
-        <div class="gallery-item">
-          <img src="photo20.jpg" onclick="openLightbox(this.src)" />
-        </div>
- 
+        <div class="gallery-item"><img src="kk (1).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (10).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (11).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (12).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (13).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (14).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (15).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (16).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (17).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (18).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (19).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (2).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (20).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (21).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (22).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (23).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (24).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (25).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (26).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (27).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (28).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (29).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (3).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (30).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (31).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (33).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (32).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (34).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (35).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (4).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (5).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (6).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (7).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (8).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="kk (9).jpg" onclick="openLightbox(this.src)" /></div>
+         <div class="gallery-item"><img src="aa (1).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="aa (2).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="aa (3).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="aa (4).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="aa (5).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="aa (6).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="aa (7).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="aa (8).jpg" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item"><img src="aa (9).jpg" onclick="openLightbox(this.src)" /></div>
       </div>
     </div>
 
@@ -826,10 +767,18 @@
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-    <img id="lightboxImg" src="" />
+    <img id="lightboxImg" src="" style="display:none;" />
+    <video id="lightboxVideo" controls style="display:none; max-width:100%; max-height:90vh; border-radius:12px;" onclick="event.stopPropagation()">
+      <source id="lightboxVideoSrc" src="" type="video/mp4">
+    </video>
   </div>
 
   <div class="toast" id="toast"></div>
+
+  <!-- 🎵 الأغنية — غيّر اسم الملف هنا -->
+  <audio id="bgMusic" loop>
+    <source src="AlbumatyCom-kayrwky-nfsy-ahbk-ma.mp3" type="audio/mpeg">
+  </audio>
 
   <script>
     // ============================================================
@@ -929,6 +878,9 @@
         document.getElementById('mainSite').style.display = 'block';
         document.getElementById('errorMsg').textContent = '';
         initSite();
+        const music = document.getElementById('bgMusic');
+        music.volume = 0.4;
+        music.play().catch(() => {});
       } else {
         document.getElementById('errorMsg').textContent = '❌ الباسورد غلط! يحيوانه';
       }
@@ -1011,10 +963,22 @@
 
     // --- Lightbox ---
     function openLightbox(src) {
-      document.getElementById('lightboxImg').src = src;
+      const img   = document.getElementById('lightboxImg');
+      const video = document.getElementById('lightboxVideo');
+      const vsrc  = document.getElementById('lightboxVideoSrc');
+      const isVideo = /\.(mp4|webm|ogg|mov)$/i.test(src);
+      if (isVideo) {
+        img.style.display = 'none';
+        video.style.display = 'block';
+        vsrc.src = src; video.load(); video.play();
+      } else {
+        video.pause(); video.style.display = 'none';
+        img.style.display = 'block'; img.src = src;
+      }
       document.getElementById('lightbox').classList.add('visible');
     }
     function closeLightbox() {
+      document.getElementById('lightboxVideo').pause();
       document.getElementById('lightbox').classList.remove('visible');
     }
 
